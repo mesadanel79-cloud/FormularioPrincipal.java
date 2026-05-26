@@ -15,17 +15,17 @@ import javax.swing.JTextField;
 
 public class FormularioPrincipal extends JFrame {
 
-    // OPERACIONES
+    // O
     JLabel lblNumero1, lblNumero2;
     JTextField txtNumero1, txtNumero2;
     JButton btnSumar, btnRestar, btnMultiplicar, btnDividir;
 
-    // TEMPERATURA
+    // T
     JLabel lblCelsius, lblFahrenheit;
     JTextField txtCelsius, txtFahrenheit;
     JButton btnCtoF, btnFtoC;
 
-    // MONEDA
+    // M
     JLabel lblDolares, lblPesos;
     JTextField txtDolares, txtPesos;
     JButton btnUsdCop, btnCopUsd;
@@ -38,12 +38,12 @@ public class FormularioPrincipal extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // ==============================
-        // SECCION OPERACIONES
-        // ==============================
+       
+        // S O
+       
 
         JLabel titulo1 = new JLabel("OPERACIONES MATEMÁTICAS");
-        titulo1.setBounds(180, 20, 250, 30);
+        titulo1.setBounds(180, 40, 250, 30);
         add(titulo1);
 
         lblNumero1 = new JLabel("Número 1:");
@@ -78,9 +78,9 @@ public class FormularioPrincipal extends JFrame {
         btnDividir.setBounds(430, 110, 100, 30);
         add(btnDividir);
 
-        // ==============================
-        // SECCION TEMPERATURA
-        // ==============================
+        
+        // S T
+        
 
         JLabel titulo2 = new JLabel("CONVERSIÓN DE TEMPERATURA");
         titulo2.setBounds(160, 180, 300, 30);
@@ -110,9 +110,9 @@ public class FormularioPrincipal extends JFrame {
         btnFtoC.setBounds(300, 270, 100, 30);
         add(btnFtoC);
 
-        // ==============================
-        // SECCION MONEDA
-        // ==============================
+        
+        // S M
+       
 
         JLabel titulo3 = new JLabel("CONVERSIÓN DE MONEDA");
         titulo3.setBounds(180, 340, 250, 30);
@@ -142,10 +142,9 @@ public class FormularioPrincipal extends JFrame {
         btnCopUsd.setBounds(320, 420, 120, 30);
         add(btnCopUsd);
 
-        // ==============================
-        // EVENTOS OPERACIONES
-        // ==============================
-
+        
+        // E O
+        
         btnSumar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
@@ -245,9 +244,9 @@ public class FormularioPrincipal extends JFrame {
             }
         });
 
-        // ==============================
-        // EVENTOS TEMPERATURA
-        // ==============================
+       
+        // E T
+       
 
         btnCtoF.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -293,9 +292,9 @@ public class FormularioPrincipal extends JFrame {
             }
         });
 
-        // ==============================
-        // EVENTOS MONEDA
-        // ==============================
+       
+        // E M
+        
 
         btnUsdCop.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -304,7 +303,7 @@ public class FormularioPrincipal extends JFrame {
 
                     double dolares = Double.parseDouble(txtDolares.getText());
 
-                    // VALIDAR NEGATIVOS
+                    // V N
                     if (dolares < 0) {
 
                         JOptionPane.showMessageDialog(null,
@@ -335,7 +334,7 @@ public class FormularioPrincipal extends JFrame {
 
                     double pesos = Double.parseDouble(txtPesos.getText());
 
-                    // VALIDAR NEGATIVOS
+                    // V N
                     if (pesos < 0) {
 
                         JOptionPane.showMessageDialog(null,
